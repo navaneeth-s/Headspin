@@ -12,6 +12,7 @@ int main()
 		s=f;
 		f=flag;
 	}
+	printf("Prime numbers in given range\n");
 	for(i=s;i<=f;i++)
 	{
 		flag=0;
