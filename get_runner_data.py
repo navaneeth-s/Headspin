@@ -1,3 +1,5 @@
+# argv[1] is the folder for the genre
+
 import sys
 import os
 current_dir = os.getcwd()
