@@ -4,10 +4,7 @@ import sys
 import os
 current_dir = os.getcwd()
 first_only = True
-try:
-    genre_name = sys.argv[1]
-except:
-    genre_name = "social_entertainment"
+genre_name = sys.argv[1]
 genre_dic = {}
 current_dir_name = current_dir.split("/")[-1]
 print(genre_name+"_bundle_dic" + " = {")
@@ -15,17 +12,12 @@ for (dirpath, dirnames, filenames) in os.walk(genre_name):
     if first_only:
         dirs = dirnames
         first_only = None
-    # print("dir path", dirpath)
-    # print("dir",dirnames)
-    # print("file", filenames)
+        
     dir_name = dirpath.split("/")[-1]
     for filename in filenames:
         if (filename.endswith(".py") and dir_name in dirs and (not dir_name.startswith("-"))):
             path = dirpath.split("/headspin")[-1]
             file_path = path+"/"+filename
-            # open_file_path = file_path.split(current_dir_name)[1]
-            # print(open_file_path)
-            # file_open = os.path(open_file_path)
             path = os.path.join(dirpath)
             path1 = path+"/" + filename
             app_name_set = True
