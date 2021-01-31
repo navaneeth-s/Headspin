@@ -1,2 +1,3 @@
-export class Niv {}
-test test
+export class Niv {
+  niv: string;
+}
