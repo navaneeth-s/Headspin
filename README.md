@@ -1,4 +1,4 @@
-# Headspin
+# HeadSpin
 Assignments
 
 All the programs are in c language. So it can be run in linux terminal by using the commands ,
